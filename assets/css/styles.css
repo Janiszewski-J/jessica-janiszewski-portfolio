@@ -5,8 +5,8 @@
   --text: #17202a;
   --muted: #506172;
   --border: #d7deea;
-  --accent: #174ea6;
-  --accent-dark: #123b7d;
+  --accent: #5a5277;
+  --accent-dark: #22223d;
   --shadow: 0 10px 24px rgba(23, 32, 42, 0.08);
   --radius: 18px;
   --max: 1100px;
@@ -126,11 +126,21 @@ h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 0.85rem; }
   color: var(--muted);
   font-size: 0.95rem;
 }
+.project-card {
+  overflow: hidden;
+}
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   margin-top: 2rem;
+}
+.card-thumbnail {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border);
 }
 .card-body { padding: 1.25rem; }
 .project-type {
