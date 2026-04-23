@@ -199,6 +199,16 @@ h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 0.85rem; }
 .flow-gallery {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+}
+.flow-gallery img {
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+  max-height: 1774px;
+}
+figcaption {
+  text-align: center;
 }
 .placeholder-box {
   min-height: 300px;
