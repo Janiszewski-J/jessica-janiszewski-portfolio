@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Event App Prototype | Portfolio</title>
-  <meta name="description" content="Case study template for a UX prototype and interaction design project." />
+  <title>Venue Ticketing App Prototype | Portfolio</title>
+  <meta name="description" content="Case study for a Figma prototype showing user flows and screen design for a music venue mobile ticketing app." />
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 <body>
@@ -13,11 +13,14 @@
     <div class="container header-inner">
       <div>
         <p class="eyebrow">Case Study</p>
-        <h1>Event Discovery App Prototype</h1>
+        <h1>Venue Ticketing App Prototype</h1>
       </div>
       <nav aria-label="Project navigation">
         <ul class="nav-list">
           <li><a href="../index.html">Home</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#results">Results</a></li>
         </ul>
       </nav>
     </div>
@@ -27,10 +30,9 @@
     <div class="container case-study">
       <section class="case-section">
         <p class="eyebrow">Project Overview</p>
-        <h2>Prototype Summary</h2>
+        <h2>Objective</h2>
         <p>
-          This page is for Figma or app-style case studies where you want to show task flows,
-          screen hierarchy, design rationale, and iteration.
+          Designed a mobile event discovery and ticketing app prototype focused on streamlined ticket purchasing, account management, and event browsing. Prioritized intuitive filtering and clear ticket access, while improving user confidence through enhanced venue labeling and simplified navigation.
         </p>
       </section>
 
@@ -38,28 +40,38 @@
         <div class="panel">
           <h3>Project Links</h3>
           <ul class="link-list">
-            <li><a href="#">Add primary project link</a></li>
-            <li><a href="#">Add supporting file or repository link</a></li>
-          </ul>
-          <p class="small-note">Use this area for a prototype link, Figma presentation link, or GitHub Pages link if the prototype was built as a live front-end project.</p>
+            <li><a href="https://www.figma.com/proto/Hhg85P1UL4ioVlzdo01Ftu/Module-6--Mood-Venue-Prototypes-v1?node-id=2004-1177&viewport=-4221%2C-10%2C1.71&t=GD7WxR5jpocWG3UJ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2004%3A1177&show-proto-sidebar=1&page-id=0%3A1" target="_blank">View prototype in Figma</a></li>
         </div>
       </section>
 
       <section class="case-section">
         <div class="info-grid">
-          <div class="panel"><h3>Primary Flow</h3><p>Example: Sign-up → event browsing → event details</p></div>
-          <div class="panel"><h3>Design Focus</h3><p>Navigation clarity, visual hierarchy, task completion</p></div>
-          <div class="panel"><h3>Evidence</h3><p>Prototype screens, annotations, usability findings</p></div>
+          <div class="panel"><h3>User Flows</h3><p>1. Sign Up → Verification & Confirmation → Main Events → Event Detail Page</p><p>2. Main Events → Apply Filters → Select Event</p><p>3. Select Event → Choose Ticket Quantity → Checkout → Purchase Confirmation</p><p>4. Customer Account → View Purchased Tickets → Select Ticket → Display Barcode for Entry</p></div>
+          <div class="panel"><h3>Design Focus</h3><p>Streamlined purchase flow, clear event filtering, intuitive account access, and improved user clarity through labeling. Emphasis on reducing friction, minimizing steps, and aligning with common mobile interaction patterns for product purchase.</p></div>
+          <div class="panel"><h3>Evidence</h3><p>High-fidelity Figma prototype demonstrating four complete user flows, including sign-up, filtering interactions, ticket purchase, and ticket retrieval. Screens illustrate navigation patterns, form interactions, filtering states, and barcode-based ticket display.</p></div>
         </div>
       </section>
 
       <section class="case-section">
         <p class="eyebrow">Screens</p>
         <h2>Flow Highlights</h2>
-        <div class="placeholder-grid">
-          <figure class="placeholder-box"><figcaption>Add onboarding or sign-in screen</figcaption></figure>
-          <figure class="placeholder-box"><figcaption>Add main discovery screen</figcaption></figure>
-          <figure class="placeholder-box"><figcaption>Add event detail or checkout screen</figcaption></figure>
+        <div class="flow-gallery">
+          <figure class="lightbox-item">
+            <img src="../assets/images/mood-login.png" alt="Landing page view of Purr and Pour website">
+            <figcaption class="small-note">Purr & Pour page view on landing</figcaption>
+          </figure>
+          <figure class="lightbox-item">
+            <img src="../assets/images/mood-event-list.png" alt="About section of Purr and Pour website in dark mode">
+            <figcaption class="small-note">About and Meet the Cats, as viewed in dark mode</figcaption>
+          </figure>
+          <figure class="lightbox-item">
+            <img src="../assets/images/mood-event-detail.png" alt="Number guessing game of Purr and Pour website">
+            <figcaption class="small-note">Number guessing game</figcaption>
+          </figure>
+          <figure class="lightbox-item">
+            <img src="../assets/images/mood-checkout.png" alt="Contact section and footer of Purr and Pour website">
+            <figcaption class="small-note">Contact form</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -67,10 +79,9 @@
         <p class="eyebrow">Design Notes</p>
         <h2>What Reviewers Should Understand</h2>
         <ul>
-          <li>What the user needed to accomplish</li>
-          <li>Why key layout and interaction decisions were made</li>
-          <li>How feedback changed the design</li>
-          <li>Any accessibility or responsive considerations</li>
+          <li>Cart-free purchase flow shortens time to checkout compared to traditional e-commerce patterns</li>
+          <li>Filtering is designed to support multi-criteria combinations (date, venue, genre) for efficient event discovery</li>
+          <li>Anticipates incomplete user profiles by deferring required data entry to checkout, improving onboarding completion rates</li>
         </ul>
       </section>
     </div>
@@ -78,9 +89,10 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Return to <a href="../index.html">portfolio homepage</a>.</p>
+      <p>© <span id="year"></span> Jessica Janiszewski. Built for GitHub Pages.</p>
     </div>
   </footer>
+
   <script src="../assets/js/main.js"></script>
 
   <button id="backToTop" aria-label="Back to top">↑ Back to Top</button>
