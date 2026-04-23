@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Print & Digital Materials | Portfolio</title>
-  <meta name="description" content="Case study template for brochures, posters, banners, and campaign materials." />
+  <title>Design Journal Page Layout | Portfolio</title>
+  <meta name="description" content="Case study for page layout design for an article belonging in an art and design history journal." />
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 <body>
@@ -13,11 +13,14 @@
     <div class="container header-inner">
       <div>
         <p class="eyebrow">Case Study</p>
-        <h1>Public-Facing Print & Digital Materials</h1>
+        <h1>Design Journal Page Layout</h1>
       </div>
       <nav aria-label="Project navigation">
         <ul class="nav-list">
           <li><a href="../index.html">Home</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#results">Results</a></li>
         </ul>
       </nav>
     </div>
@@ -25,60 +28,71 @@
 
   <main id="main" class="section">
     <div class="container case-study">
-      <section class="case-section">
+      <section id="overview" class="case-section">
         <p class="eyebrow">Project Overview</p>
-        <h2>Communication Goal</h2>
+        <h2>Objective</h2>
         <p>
-          Use this page for banners, brochures, posters, invitations, newsletters, programs,
-          or other visual communication materials that match the target announcement.
+          Design and produce a professional, publication-ready magazine feature for Design Through The Decades Journal that integrates editorial writing, typographic hierarchy, and grid-based layout systems. The project focused on translating long-form content into a cohesive visual narrative using industry-standard editorial design principles.
         </p>
-      </section>
+        <div class="info-grid">
+          <div class="panel"><h3>My Role</h3><p>Lead editorial designer and content developer responsible for layout design, typography, visual system development, and content integration.</p></div>
+          <div class="panel"><h3>Tools</h3><p>Adobe InDesign, Adobe Illustrator/Photoshop, grid and type system frameworks, APA citation formatting.</p></div>
+          <div class="panel"><h3>Deliverables</h3><p>16-page magazine including front/back cover, multi-spread feature article, visual appendix, typographic system, images, and fully formatted references.</p></div>
+        </div>
 
-      <section class="case-section">
-        <div class="panel">
+        <div class="panel project-links">
           <h3>Project Links</h3>
           <ul class="link-list">
-            <li><a href="#">Add primary project link</a></li>
-            <li><a href="#">Add supporting file or repository link</a></li>
+            <li><a href="../assets/images/Jessica-Janiszewski-design-journal-layout.pdf" target="_blank">View project PDF</a></li>
           </ul>
-          <p class="small-note">Use this area for a PDF sample, downloadable asset, or project folder link when you want reviewers to see final materials.</p>
         </div>
       </section>
 
-      <section class="case-section">
-        <div class="info-grid">
-          <div class="panel"><h3>Your Role</h3><p>Graphic Designer / Production Designer</p></div>
-          <div class="panel"><h3>Tools</h3><p>InDesign, Illustrator, Photoshop, PowerPoint</p></div>
-          <div class="panel"><h3>Format Types</h3><p>Print, digital, social, event, presentation support</p></div>
-        </div>
+      <section id="process" class="case-section">
+        <p class="eyebrow">Process</p>
+        <h2>Approach</h2>
+        <ol class="number-list">
+          <li><strong>Concept Development & Refinement:</strong> Revised and structured a long-form article, incorporating peer feedback and organizing content for editorial flow across multiple spreads.</li>
+          <li><strong>Typography & System Design:</strong> Selected and applied a consistent type scale to establish hierarchy for headlines, subheads, body text, captions, and supporting elements.</li>
+          <li><strong>Grid & Layout Exploration:</strong> Designed multiple spread layouts using varied grid systems to balance text and imagery while maintaining visual consistency.</li>
+          <li><strong>Layout Execution:</strong> Built the full magazine, aligning all elements to grids, refining spacing, and ensuring readability through proper text flow and alignment.</li>
+          <li><strong>Polish & Quality Control:</strong> Eliminated widows/orphans, refined visual hierarchy, ensured consistent styling, and finalized a cohesive, publication-ready design.</li>
+        </ol>
       </section>
 
       <section class="case-section">
-        <p class="eyebrow">Design Evidence</p>
-        <h2>What to Show</h2>
+        <p class="eyebrow">Visuals</p>
+        <h2>Project Screenshots</h2>
+        <div class="image-gallery">
+          <figure class="lightbox-item">
+            <img src="../assets/images/journal-spread-1.png" alt="Two page journal spread with an image in the middle">
+            <figcaption class="small-note">Spread with image in the middle</figcaption>
+          </figure>
+          <figure class="lightbox-item">
+            <img src="../assets/images/journal-spread-2.png" alt="Two page journal spread with a large image on the right page">
+            <figcaption class="small-note">Spread with image on the right page</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="results" class="case-section">
+        <p class="eyebrow">Results</p>
+        <h2>Outcomes</h2>
         <ul>
-          <li>Final visuals with brief captions</li>
-          <li>Layout hierarchy and typography choices</li>
-          <li>How the design met audience or branding requirements</li>
-          <li>Any production specifications, file prep, or multi-format adaptation</li>
+          <li>Produced a cohesive, professional editorial magazine demonstrating strong typographic hierarchy and grid-based layout systems.</li>
+          <li>Improved readability and visual flow through structured content organization and consistent design systems.</li>
+          <li>Successfully integrated text, imagery, and visual assets into a unified publication aligned with industry editorial standards.</li>
         </ul>
-      </section>
-
-      <section class="case-section">
-        <div class="placeholder-grid">
-          <figure class="placeholder-box"><figcaption>Add brochure spread or poster example</figcaption></figure>
-          <figure class="placeholder-box"><figcaption>Add digital/social adaptation</figcaption></figure>
-          <figure class="placeholder-box"><figcaption>Add production-ready asset sample</figcaption></figure>
-        </div>
       </section>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Return to <a href="../index.html">portfolio homepage</a>.</p>
+      <p>© <span id="year"></span> Jessica Janiszewski. Built for GitHub Pages.</p>
     </div>
   </footer>
+
   <script src="../assets/js/main.js"></script>
 
   <button id="backToTop" aria-label="Back to top">↑ Back to Top</button>

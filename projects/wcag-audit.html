@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Event App Prototype | Portfolio</title>
-  <meta name="description" content="Case study template for a UX prototype and interaction design project." />
+  <title>WCAG Audit of Website | Portfolio</title>
+  <meta name="description" content="Case study for annotated wireframes that point out critical issues in WCAG conformity of an existing website." />
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 <body>
@@ -13,11 +13,14 @@
     <div class="container header-inner">
       <div>
         <p class="eyebrow">Case Study</p>
-        <h1>Event Discovery App Prototype</h1>
+        <h1>WCAG Audit of Website</h1>
       </div>
       <nav aria-label="Project navigation">
         <ul class="nav-list">
           <li><a href="../index.html">Home</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#results">Results</a></li>
         </ul>
       </nav>
     </div>
@@ -25,52 +28,55 @@
 
   <main id="main" class="section">
     <div class="container case-study">
-      <section class="case-section">
+      <section id="overview" class="case-section">
         <p class="eyebrow">Project Overview</p>
-        <h2>Prototype Summary</h2>
+        <h2>Objective</h2>
         <p>
-          This page is for Figma or app-style case studies where you want to show task flows,
-          screen hierarchy, design rationale, and iteration.
+          Develop low-fidelity wireframes that address identified accessibility issues. The project focused on annotating critical issues that, when solved, would improve usability, content clarity, and compliance with accessibility standards.
         </p>
-      </section>
-
-      <section class="case-section">
-        <div class="panel">
-          <h3>Project Links</h3>
-          <ul class="link-list">
-            <li><a href="#">Add primary project link</a></li>
-            <li><a href="#">Add supporting file or repository link</a></li>
-          </ul>
-          <p class="small-note">Use this area for a prototype link, Figma presentation link, or GitHub Pages link if the prototype was built as a live front-end project.</p>
-        </div>
-      </section>
-
-      <section class="case-section">
         <div class="info-grid">
-          <div class="panel"><h3>Primary Flow</h3><p>Example: Sign-up → event browsing → event details</p></div>
-          <div class="panel"><h3>Design Focus</h3><p>Navigation clarity, visual hierarchy, task completion</p></div>
-          <div class="panel"><h3>Evidence</h3><p>Prototype screens, annotations, usability findings</p></div>
+          <div class="panel"><h3>My Role</h3><p>Researcher responsible for analyzing accessibility findings and creating annotated wireframes that clearly communicate problems and proposed solutions.</p></div>
+          <div class="panel"><h3>Tools</h3><p>Balsamiq, Adobe Illustrator, accessibility audit documentation, and WCAG guidelines (POUR Principles).</p></div>
+          <div class="panel"><h3>Deliverables</h3><p>Full-page low-fidelity wireframes, annotated with accessibility issues and a comprehensive legend detailing violations, explanations, and recommended solutions.</p></div>
         </div>
       </section>
 
-      <section class="case-section">
-        <p class="eyebrow">Screens</p>
-        <h2>Flow Highlights</h2>
-        <div class="placeholder-grid">
-          <figure class="placeholder-box"><figcaption>Add onboarding or sign-in screen</figcaption></figure>
-          <figure class="placeholder-box"><figcaption>Add main discovery screen</figcaption></figure>
-          <figure class="placeholder-box"><figcaption>Add event detail or checkout screen</figcaption></figure>
-        </div>
+      <section id="process" class="case-section">
+        <p class="eyebrow">Process</p>
+        <h2>Approach</h2>
+        <ol class="number-list">
+          <li><strong>Accessibility Analysis:</strong> Reviewed prior audit findings to identify critical usability and accessibility issues, including WCAG violations and plain-language concerns.</li>
+          <li><strong>Issue Categorization:</strong> Mapped issues to accessibility principles (POUR and WCAG criteria).</li>
+          <li><strong>Annotation & Documentation:</strong> Applied visual annotation symbols directly to wireframes and developed a detailed legend explaining each issue and proposed fix.</li>
+          <li><strong>Refinement & Clarity Check:</strong> Ensured wireframes were clean, legible, and effectively communicated both problems and solutions for stakeholders.</li>
+        </ol>
       </section>
 
       <section class="case-section">
-        <p class="eyebrow">Design Notes</p>
-        <h2>What Reviewers Should Understand</h2>
+        <p class="eyebrow">Visuals</p>
+        <h2>Project Screenshots</h2>
+        <div class="flow-gallery">
+          <figure class="lightbox-item">
+            <img src="../assets/images/wcag-audit-home-page.png" alt="WCAG issues annotated on website home page">
+            <figcaption class="small-note">WCAG issues annotated on website home page</figcaption>
+          </figure>
+          <figure class="lightbox-item">
+            <img src="../assets/images/wcag-audit-cookies.png" alt="WCAG issues annotated on website cookie details page">
+            <figcaption class="small-note">WCAG issues annotated on website cookie details page</figcaption>
+          </figure>
+          <figure class="lightbox-item">
+            <img src="../assets/images/wcag-audit-order.png" alt="WCAG issues annotated on website add to order page">
+            <figcaption class="small-note">WCAG issues annotated on website add to order page</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="results" class="case-section">
+        <p class="eyebrow">Results</p>
+        <h2>Outcomes</h2>
         <ul>
-          <li>What the user needed to accomplish</li>
-          <li>Why key layout and interaction decisions were made</li>
-          <li>How feedback changed the design</li>
-          <li>Any accessibility or responsive considerations</li>
+          <li>Created clear, actionable documentation linking accessibility issues to design solutions.</li>
+          <li>Strengthened ability to translate audit findings into practical UX improvements.</li>
         </ul>
       </section>
     </div>
@@ -78,9 +84,10 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Return to <a href="../index.html">portfolio homepage</a>.</p>
+      <p>© <span id="year"></span> Jessica Janiszewski. Built for GitHub Pages.</p>
     </div>
   </footer>
+
   <script src="../assets/js/main.js"></script>
 
   <button id="backToTop" aria-label="Back to top">↑ Back to Top</button>
